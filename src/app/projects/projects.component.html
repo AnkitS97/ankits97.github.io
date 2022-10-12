@@ -1,13 +1,13 @@
 <div class="row">
-  <div class="col-sm-4">
-    <div class="card text-center project" (click)="showDialog()">
-      <img src="../../assets/images/DS-projects.png" class="card-img" alt="Project 1">
-      <div class="card-body">
-        <h5 class="card-title">Project 1</h5>
+    <div class="col-md-4 pt-4" *ngFor="let project of projects">
+      <div class="card text-center project" (click)="showDialog(project)">
+        <img style="height: 200px;" src="assets/images/{{project['projectImage']}}" class="card-img" alt="Project 1">
+        <div class="card-body" style="height: 100px;">
+          <h5 class="card-title">{{project['projectName']}}</h5>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-sm-4">
+  <!-- <div class="col-sm-4">
     <div class="card text-center project" (click)="showDialog()">
       <img src="../../assets/images/DS-projects.png" class="card-img" alt="Project 1">
       <div class="card-body">
@@ -22,23 +22,23 @@
         <h5 class="card-title">Project 3</h5>
       </div>
     </div>
-  </div>
+  </div> -->
 
 </div>
 
 <p-dialog [(visible)]="display" closable="true" modal="modal" [draggable]="false" [resizable]="false"
   [responsive]="true" [style]="{width: '500px'}" [dismissableMask]="true" >
   <p-header>
-    {{project['projectName']}}
+    {{project_info['projectName']}}
     
   </p-header>
   <div class="mx-auto image">
-    <img src="../../assets/images/{{project['projectImage']}}" class="card-img" alt="Project 1">
+    <img src="assets/images/{{project_info['projectImage']}}" class="card-img" alt="Project 1">
   </div>
   <div class="pt-3 text-center">
-    {{project['projectDesc']}}
+    {{project_info['projectDesc']}}
     <div class="pt-3">
-      <button type="button" class="btn btn-outline-primary"><a href="{{project['projectLink']}}" style="color: inherit;" target="_blank">GitHub</a></button>
+      <button type="button" class="btn btn-outline-primary"><a href="{{project_info['projectLink']}}" style="color: inherit;" target="_blank">GitHub</a></button>
     </div>
   </div>
 </p-dialog>

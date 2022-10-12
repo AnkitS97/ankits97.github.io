@@ -8,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
 
   skills = [
-    'Machine Learning',
     'Python',
+    'Machine Learning',
+    'Deep Learning',
+    'Computer Vision',
+    'Tensorflow/Pytorch',
     'SQL',
-    'Angular 7+',
-    'Java'
+    'DOCKER',
+    'Airflow',
+    'Pyspark',
+    'Flask/Django',
   ]
 
   constructor() { }

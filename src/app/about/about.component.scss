@@ -41,7 +41,7 @@
   .row {
     position: absolute;
     margin-left: 32px;
-    top: 92%;
+    top: 94%;
   }
 }
 
@@ -49,22 +49,22 @@
   .row {
     position: absolute;
     margin-left: 59px;
-    top: 92%;
+    top: 94%;
   }
 }
 
 @media (min-width: 376px) and (max-width: map-get($grid-breakpoints, xs)) {
   .row {
     position: absolute;
-    margin-left: 86px;
-    top: 92%;
+    margin-left: 84px;
+    top: 94%;
   }
 }
 
 @media (min-width: map-get($grid-breakpoints, xs)) and (max-width: map-get($grid-breakpoints, sm )) {
   .row {
     position: absolute;
-    top: 92%;
+    top: 94%;
     margin-left: 34px;
   }
 }
@@ -99,6 +99,10 @@
       font-size: 15px;
     }
   }  
+}
+
+a {
+  text-decoration: none;
 }
 
 
