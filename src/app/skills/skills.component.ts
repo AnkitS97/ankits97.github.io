@@ -12,11 +12,14 @@ export class SkillsComponent implements OnInit {
     'Machine Learning',
     'Deep Learning',
     'Computer Vision',
+    'NLP',
+    'Generative AI',
     'Tensorflow/Pytorch',
     'SQL',
     'DOCKER',
+    'Kubernetes',
     'Airflow',
-    'Pyspark',
+    'Streamlit',
     'Flask/Django',
   ]
 
