@@ -1,7 +1,0 @@
-@import '../../styles-variable.scss';
-
-@media (max-width: map-get($grid-breakpoints, sm )) {
-  h3 {
-    padding-right: 8px;
-  }
-}
